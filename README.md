@@ -15,19 +15,19 @@ npm install aligned-buffer
 
 Require module:
 
-```
+```javascript
 var aligned = require("aligned-buffer");
 ```
 
 Getting alignment:
 
-```
+```javascript
 var alignment = aligned.alignment();
 ```
 
 Getting aligned buffer:
 
-```
+```javascript
 var buf = aligned.buffer(/* alignment, don't change*/ aligned.alignment(), /* size */ 1024 * 64);
 ```
 
@@ -37,7 +37,7 @@ You will need at least node-0.8.9 to support O_DIRECT flag.
 If you want to use it with older node, you need to find out O_DIRECT
 value by yourself (`fgrep O_DIRECT /usr/include on linux` for linux).
 
-```
+```javascript
 var fs        = require("aligned");
     constants = process.binding("constants"),
     fd        = fs.openSync("/my_big_file", constants.O_RDONLY | constants.O_DIRECT),
