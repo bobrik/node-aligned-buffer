@@ -1,0 +1,30 @@
+{
+  "name": "aligned-buffer",
+  "version": "0.1.0",
+  "description": "Create aligned buffers to make faster disk io with less iops",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bobrik/node-aligned-buffer.git"
+  },
+  "keywords": [
+    "buffer",
+    "posix_memalign",
+    "memalign",
+    "alignment",
+    "fs",
+    "iops",
+    "io",
+    "disk"
+  ],
+  "author": "Ian Babrou <ibobrik@gmail.com>",
+  "license": "BSD",
+  "gypfile": true
+}
