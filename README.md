@@ -35,7 +35,7 @@ var buf = aligned.buffer(/* alignment, don't change*/ aligned.alignment(), /* si
 
 You will need at least node-0.8.9 to support O_DIRECT flag.
 If you want to use it with older node, you need to find out O_DIRECT
-value by yourself (`fgrep O_DIRECT /usr/include on linux` for linux).
+value by yourself (`fgrep O_DIRECT /usr/include` for linux).
 
 ```javascript
 var fs        = require("aligned");
