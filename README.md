@@ -38,7 +38,8 @@ If you want to use it with older node, you need to find out O_DIRECT
 value by yourself (`fgrep O_DIRECT /usr/include` for linux).
 
 ```javascript
-var fs        = require("aligned");
+var fs        = require("fs"),
+    aligned   = require("aligned-buffer"),
     constants = process.binding("constants"),
     fd        = fs.openSync("/my_big_file", constants.O_RDONLY | constants.O_DIRECT),
     size      = 64 * 1024, // 64k blocks
