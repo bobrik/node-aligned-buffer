@@ -1,6 +1,6 @@
 {
   "name": "aligned-buffer",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Create aligned buffers to make faster disk io with less iops",
   "main": "index.js",
   "directories": {

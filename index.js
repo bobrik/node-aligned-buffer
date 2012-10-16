@@ -1,4 +1,4 @@
 (function() {
-    module.exports = require('./build/Release/aligned-buffer.node');
+    module.exports = require('./build/Release/aligned_buffer.node');
 })(module);
 

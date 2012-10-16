@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "aligned-buffer",
+      "target_name": "aligned_buffer",
       "sources": [
         "src/aligned-buffer.cc"
       ],

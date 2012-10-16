@@ -51,3 +51,5 @@ init (Handle<Object> target) {
     NODE_SET_METHOD(target, "alignment", alignment);
     NODE_SET_METHOD(target, "buffer", buffer);
 }
+
+NODE_MODULE(aligned_buffer, init);
